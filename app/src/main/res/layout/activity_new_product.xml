@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/materialSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/select_material_prompt" />
+
+        <EditText
+            android:id="@+id/glassFiberEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Stiklo pluošto kiekis (%)"
+            android:inputType="number"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/weightEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Svoris (g)"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/quantityEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kiekis"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/sprueWeightEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Formavimo svoris (g)"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/requiredParamsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pasirinkti parametrus"
+            android:visibility="gone"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/showParametersButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pateikti skaičiavimus"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@android:color/holo_blue_light" />
+
+        <LinearLayout
+            android:id="@+id/resultsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/formNumberEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Formos nr"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/machineNumberEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Staklių nr"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/dryingTemperatureEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Džiovinimo temperatūra (°C)"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/dryingTimeEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Džiovinimo laikas (min)"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/injectionWeightEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Įpurškimo svoris (g)"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/injectionSpeedEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Įpurškimo greitis (mm/s)"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/holdingPressureEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Laikymo spaudimas (bar)"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/holdingSpeedEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Laikymo greitis (mm/s)"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/holdingTimeEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Laikymo laikas (s)"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/cylinderTemperatureZone1EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="1 zonos temperatūra (°C)"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/cylinderTemperatureZone2EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="2 zonos temperatūra (°C)"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/cylinderTemperatureZone3EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="3 zonos temperatūra (°C)"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/cylinderTemperatureZone4EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="4 zonos temperatūra (°C)"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/nozzleTemperatureEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Antgalio temperatūra (°C)"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/moldTemperatureEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Plokštės temperatūra (°C)"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/lockPressureEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Rakinimo slėgis (kN)"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Įrašyti duomenis"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@android:color/darker_gray"
+                android:enabled="false" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
